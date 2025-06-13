@@ -14,7 +14,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
   backend:
-    image: dervinhdo/code-review-backend:v0.0.1
+    image: dervinhdo/code-review-backend:v0.0.3
     container_name: code-review-backend
     depends_on:
       - postgres
