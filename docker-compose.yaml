@@ -14,7 +14,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
   backend:
-    image: dervinhdo/code-review-backend:v0.0.3
+    image: dervinhdo/code-review-backend:v0.0.4
     container_name: code-review-backend
     depends_on:
       - postgres
@@ -28,7 +28,7 @@ services:
     ports:
       - "8080:8080"
   frontend:
-    image: dervinhdo/code-review-frontend:v0.0.0
+    image: dervinhdo/code-review-frontend:v0.0.3
     container_name: code-review-frontend
     depends_on:
       - backend
